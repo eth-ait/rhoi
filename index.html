@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="description"
+        content="Reconstructing Action-Conditioned Human-Object Interactions Using Commonsense Knowledge Priors.">
+  <meta name="keywords" content="rhoi">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Reconstructing Action-Conditioned Human-Object Interactions Using Commonsense Knowledge Priors</title>
+
+  </script>
+
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
+        rel="stylesheet">
+
+  <link rel="stylesheet" href="./static/css/bulma.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="./static/css/fontawesome.all.min.css">
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="./static/css/index.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script defer src="./static/js/fontawesome.all.min.js"></script>
+  <script src="./static/js/bulma-carousel.min.js"></script>
+  <script src="./static/js/bulma-slider.min.js"></script>
+  <script src="./static/js/index.js"></script>
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-72PW1FZDE4"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-72PW1FZDE4');
+  </script>
+</head>
+<body>
+
+<section class="hero">
+  <div class="hero-body">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered">
+        <div class="column has-text-centered">
+          <h1 class="title is-1 publication-title">Reconstructing Action-Conditioned Human-Object Interactions Using Commonsense Knowledge Priors</h1>
+          <div class="is-size-5 publication-authors">
+            <span class="author-block">
+              <a href="https://ait.ethz.ch/people/xiwang/">Xi Wang</a><sup>1,*</sup>,</span>
+            <span class="author-block">
+              <a>Gen Li</a><sup>1</sup>,</span>
+            <span class="author-block">
+              <a href="https://yenlingkuo.com/">Yen-Ling Kuo</a><sup>2</sup>,</span>
+            <span class="author-block">
+              <a href="https://ps.is.tuebingen.mpg.de/person/mkocabas">Muhammed Kocabas</a><sup>1,3</sup>,</span>
+            <span class="author-block">
+              <a href="https://ait.ethz.ch/people/eaksan/">Emre Aksan</a><sup>1</sup>,
+            </span>
+            <span class="author-block">
+              <a href="https://ait.ethz.ch/people/hilliges/">Otmar Hilliges</a><sup>1</sup>
+            </span>
+          </div>
+
+          <div class="is-size-5 publication-authors">
+            <span class="author-block"><sup>1</sup>ETH Zurich, Switzerland</span>
+            <br>
+            <span class="author-block"><sup>3</sup>Max Planck Institute for Intelligent Systems, Tübingen, Germany</span>
+            <br>
+            <span class="author-block"><sup>2</sup>Massachusetts Institute of Technology, USA</span>
+            <br>
+            <span class="author-block"><sup>*</sup>Equal Contribution</span>
+            <br>
+            <span class="author-block">  <b>In 3DV '22</b></span>
+          </div>
+
+          <div class="column has-text-centered">
+            <div class="publication-links">
+              <!-- PDF Link. -->
+              <span class="link-block">
+                <a href="https://arxiv.org/abs/2209.02485"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fas fa-file-pdf"></i>
+                  </span>
+                  <span>Paper</span>
+                </a>
+              </span>
+              <!-- Video Link. -->
+              <span class="link-block">
+                <a href="https://youtu.be/YB1_xKlueUI"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fab fa-youtube"></i>
+                  </span>
+                  <span>Video</span>
+                </a>
+              </span>
+          </div>
+        </div>
+      </div>
+    </div>
+</section>
+
+<div class="columns is-centered has-text-centered">
+  <div class="column is-four-fifths">
+    <div class="diagram">
+        <img src="static/images/overview-new-01.png" alt="Overview" height="750" width="1000" />
+    </div>
+  </div>
+</div>
+
+<section class="section_video">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Video</h2>
+        <div class="publication-video">
+          <video id="teaser" controls height="100%">
+            <source src="https://youtu.be/YB1_xKlueUI"
+                    type="video/mp4">
+          </video>
+        </div>
+        <h2 class="subtitle has-text-centered">
+            We present a method for inferring diverse 3D models of human-object interactions from images using priors extracted from large language models.
+        </h2>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container is-max-desktop">
+    <!-- Abstract. -->
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Abstract</h2>
+        <div class="content has-text-justified">
+          <p>
+            We present a method for inferring diverse 3D models of human-object interactions from images. Reasoning about how humans interact with objects in complex scenes from
+            a single 2D image is a challenging task given ambiguities arising from the loss of information through projection. In addition, modeling 3D interactions requires the
+            generalization ability towards diverse object categories and interaction types. We propose an action-conditioned modeling of interactions that allows us to infer diverse
+            3D arrangements of humans and objects without supervision on contact regions or 3D scene geometry. Our method extracts highlevel commonsense knowledge from large language
+            models (such as GPT-3), and applies them to perform 3D reasoning of human-object interactions. Our key insight is priors extracted from large language models can help in
+            reasoning about human-object contacts from textural prompts only. We quantitatively evaluate the inferred 3D models on a large human-object interaction dataset and show how our
+            method leads to better 3D reconstructions. We further qualitatively evaluate the effectiveness of our method on real images and demonstrate its generalizability towards
+            interaction types and object categories.
+          </p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<div class="columns is-centered has-text-centered">
+  <div class="column is-four-fifths">
+    <h2 class="title is-3">Poster</h2>
+    <div class="publication-video">
+
+      <embed src="static/images/RHOI_Poster.pdf" width="1000" height="750" type="application/pdf">
+
+    </div>
+  </div>
+</div>
+
+<section class="section" id="BibTeX">
+  <div class="container is-max-desktop content">
+    <h2 class="title">BibTeX</h2>
+    <pre><code>@inproceedings{wang2022reconstruction,
+      title={Reconstructing Action-Conditioned Human-Object Interactions Using Commonsense Knowledge Priors},
+      author={Wang, Xi and Li, Gen and Kuo, Yen-Ling and Kocabas, Muhammed and Aksan, Emre and Hilliges, Otmar},
+      booktitle={International Conference on 3D Vision (3DV)},
+      year={2022}
+    }</code></pre>
+  </div>
+</section>
+
+</body>
+</html>
